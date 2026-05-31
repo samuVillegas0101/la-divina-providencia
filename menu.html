@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú digital · La Divina Providencia</title>
+  <meta name="description" content="Carta completa de La Divina Providencia Parrilla Mirador." />
+  <meta name="theme-color" content="#090806" />
+  <link rel="preload" href="assets/logo.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="menu-page">
+  <a class="skip-link" href="#menu-content">Saltar al menú</a>
+  <header class="site-nav" data-site-nav>
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="La Divina Providencia - inicio">
+        <img src="assets/logo.png" alt="La Divina Providencia Parrilla Mirador" />
+      </a>
+      <nav class="main-actions" aria-label="Navegación principal">
+        <a class="nav-link desktop-only" href="index.html">Inicio</a>
+        <a class="btn btn-wa" data-whatsapp-link href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="menu-content">
+    <section class="hero menu-hero" aria-labelledby="menu-title">
+      <div class="container hero-grid menu-hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Carta completa</span>
+          <h1 id="menu-title">Menú digital</h1>
+          <p>Todos los productos organizados en cuatro categorías principales para que puedas ir directo a lo que buscas.</p>
+          <div class="action-row">
+            <a class="btn btn-fire" href="#quick-menu">Empezar carta</a>
+            <a class="btn btn-wa" data-whatsapp-link href="#">Reservar por WhatsApp</a>
+          </div>
+        </div>
+        <figure class="visual-card hero-photo">
+          <img src="assets/hero-placeholder.svg" alt="Espacio para foto de carta y parrilla" />
+        </figure>
+      </div>
+    </section>
+
+    <nav class="quick-menu" id="quick-menu" aria-label="Accesos rápidos del menú">
+      <div class="container quick-menu-scroll" data-quick-menu></div>
+    </nav>
+
+    <section class="menu-list" data-menu-list></section>
+  </main>
+
+  <a class="floating-whatsapp" data-whatsapp-link href="#" aria-label="Reservar por WhatsApp">WA</a>
+
+  <footer class="site-footer compact-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="La Divina Providencia Parrilla Mirador" />
+        <p>Menú digital con espacios listos para reemplazar cada placeholder por la foto real del producto.</p>
+      </div>
+      <div>
+        <h3>Categorías</h3>
+        <ul data-footer-categories></ul>
+      </div>
+      <div>
+        <h3>Ubicación</h3>
+        <p><strong>Mirador La Providencia</strong><br>Antigua Vía al Mar #Kilómetro 9, Pajarito, San Cristóbal, San Pedro, Medellín, Antioquia</p>
+        <a class="text-link" data-maps-link href="#" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <div>
+        <h3>Acciones</h3>
+        <a class="text-link" href="index.html">Volver al home</a><br>
+        <a class="text-link" data-whatsapp-link href="#">Reservar por WhatsApp</a><br>
+        <a class="text-link" data-instagram-link href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

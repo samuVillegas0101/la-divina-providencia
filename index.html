@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Divina Providencia · Parrilla Mirador</title>
+  <meta name="description" content="Tradición, parrilla y mirador para compartir. Carta digital de La Divina Providencia." />
+  <meta name="theme-color" content="#090806" />
+  <link rel="preload" href="assets/logo.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-nav" data-site-nav>
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="La Divina Providencia - inicio">
+        <img src="assets/logo.png" alt="La Divina Providencia Parrilla Mirador" />
+      </a>
+      <nav class="main-actions" aria-label="Navegación principal">
+        <a class="nav-link desktop-only" href="menu.html">Carta</a>
+        <a class="nav-link desktop-only" href="#ubicacion">Ubicación</a>
+        <a class="btn btn-wa" data-whatsapp-link href="#">WhatsApp</a>
+        <a class="btn btn-fire desktop-only" href="menu.html">Ver carta completa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-home" aria-labelledby="home-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">El fuego que reúne</span>
+          <h1 id="home-title">Tradición,<br>parrilla y<br>mirador <em>para compartir.</em></h1>
+          <p>Una experiencia alrededor del fuego, la vista y una carta abundante para disfrutar sin complicarse.</p>
+          <div class="action-row">
+            <a class="btn btn-fire" href="menu.html">Ver carta completa</a>
+            <a class="btn btn-wa" data-whatsapp-link href="#">Reservar por WhatsApp</a>
+          </div>
+        </div>
+        <figure class="visual-card hero-photo">
+          <img src="assets/hero-placeholder.svg" alt="Espacio para foto del mirador y fuego" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-categories" aria-labelledby="explora-title">
+      <div class="container">
+        <div class="split-heading">
+          <div>
+            <span class="eyebrow">Todo en 4 momentos</span>
+            <h2 id="explora-title">Explora la carta</h2>
+          </div>
+          <p>La carta se agrupa en pocas decisiones para que el menú digital sea simple, rápido y fácil de recorrer.</p>
+        </div>
+        <div class="category-grid" data-category-cards></div>
+      </div>
+    </section>
+
+    <section class="section section-featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="split-heading">
+          <div>
+            <span class="eyebrow">Los favoritos de la casa</span>
+            <h2 id="featured-title">Imperdibles</h2>
+          </div>
+          <p>Una selección visual para abrir el apetito y llevar al usuario directamente a los platos más vendedores.</p>
+        </div>
+        <div class="product-grid featured-grid" data-home-highlights></div>
+      </div>
+    </section>
+
+    <section class="section section-experience" aria-labelledby="experience-title">
+      <div class="container experience-grid">
+        <div class="experience-copy">
+          <span class="eyebrow">Más que un restaurante</span>
+          <h2 id="experience-title">Una experiencia que se queda contigo.</h2>
+          <div class="pillars">
+            <article class="pillar"><span>🔥</span><div><h3>Tradición</h3><p>Recetas de antaño con sabor real.</p></div></article>
+            <article class="pillar"><span>⛰</span><div><h3>Mirador</h3><p>Una vista que enamora desde la mesa.</p></div></article>
+            <article class="pillar"><span>🍽</span><div><h3>Abundancia</h3><p>Porciones generosas para compartir.</p></div></article>
+          </div>
+        </div>
+        <figure class="visual-card experience-photo">
+          <img src="assets/experience-placeholder.svg" alt="Espacio para foto de experiencia y mirador" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-grid">
+        <div>
+          <span class="eyebrow">Listo para vivir la experiencia</span>
+          <h2 id="cta-title">Te esperamos.</h2>
+          <p>Reserva tu mesa por WhatsApp y déjate conquistar por el fuego, la vista y la mejor compañía.</p>
+        </div>
+        <div class="action-row cta-actions">
+          <a class="btn btn-fire" data-whatsapp-link href="#">Reservar ahora</a>
+          <a class="btn btn-outline" href="menu.html">Ver carta</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="ubicacion">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="La Divina Providencia Parrilla Mirador" />
+        <p>El fuego que reúne, la tradición que se siente valiosa y la abundancia que se comparte.</p>
+      </div>
+      <div>
+        <h3>Carta</h3>
+        <ul data-footer-categories></ul>
+      </div>
+      <div>
+        <h3>Ubicación</h3>
+        <p><strong>Mirador La Providencia</strong><br>Antigua Vía al Mar #Kilómetro 9, Pajarito, San Cristóbal, San Pedro, Medellín, Antioquia</p>
+        <a class="text-link" data-maps-link href="#" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <div>
+        <h3>Reservas</h3>
+        <p>WhatsApp<br><span data-phone-label>+57 300 1234567</span></p>
+        <a class="text-link" data-whatsapp-link href="#">Reservar por WhatsApp</a><br>
+        <a class="text-link" data-instagram-link href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
