@@ -220,3 +220,6 @@ a.product-card:hover{transform:translateY(-2px);border-color:rgba(201,168,103,.4
   .quick-pill{font-size:10px;padding:0 12px}
   .footer-brand img{width:145px}
 }
+.menu-category {
+    padding-top: 40px;
+}
