@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 950" role="img" aria-label="Foto experiencia y mirador pendiente">
+  <defs>
+    <radialGradient id="glow" cx="66%" cy="72%" r="40%">
+      <stop offset="0" stop-color="#d94b25" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#54301e" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#080706"/>
+    </radialGradient>
+    <linearGradient id="base" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#1b120d"/><stop offset="1" stop-color="#060504"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency="0.75" numOctaves="3"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.12"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1400" height="950" fill="url(#base)"/>
+  <rect width="1400" height="950" fill="url(#glow)" opacity="0.78"/>
+  <path d="M0 620 C260 500 430 575 680 485 C900 405 1070 530 1400 375 L1400 950 L0 950Z" fill="#0e0e0a" opacity="0.9"/>
+  <rect width="1400" height="950" filter="url(#grain)" opacity="0.45"/>
+  <text x="700" y="505" fill="#f1e3c6" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="10" text-anchor="middle" opacity="0.35">FOTO EXPERIENCIA / MIRADOR</text>
+</svg>

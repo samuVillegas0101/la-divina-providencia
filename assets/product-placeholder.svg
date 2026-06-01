@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Foto de producto pendiente">
+  <defs>
+    <radialGradient id="g" cx="45%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#6d4b31" stop-opacity="0.9"/>
+      <stop offset="28%" stop-color="#3a2418" stop-opacity="0.95"/>
+      <stop offset="72%" stop-color="#120d0a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#070605"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" type="fractalNoise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.12"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect width="1200" height="900" filter="url(#grain)" opacity="0.32"/>
+  <circle cx="585" cy="410" r="126" fill="#d66b31" opacity="0.08"/>
+  <text x="600" y="465" fill="#f1e3c6" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" letter-spacing="18" text-anchor="middle" opacity="0.48">FOTO</text>
+</svg>
