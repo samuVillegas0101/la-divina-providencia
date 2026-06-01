@@ -4,13 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menú digital · La Divina Providencia</title>
-  <meta name="description" content="Carta completa de La Divina Providencia Parrilla Mirador." />
-  <meta name="theme-color" content="#090806" />
+  <meta name="description" content="Carta completa de La Divina Providencia Parrilla Mirador organizada por categorías, con precios y espacios para fotografías." />
+  <meta name="theme-color" content="#070605" />
   <link rel="preload" href="assets/logo.png" as="image" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="menu-page">
   <a class="skip-link" href="#menu-content">Saltar al menú</a>
+
   <header class="site-nav" data-site-nav>
     <div class="nav-shell">
       <a class="brand" href="index.html" aria-label="La Divina Providencia - inicio">
@@ -29,14 +30,14 @@
         <div class="hero-copy">
           <span class="eyebrow">Carta completa</span>
           <h1 id="menu-title">Menú digital</h1>
-          <p>Todos los productos organizados en cuatro categorías principales para que puedas ir directo a lo que buscas.</p>
+          <p>Todos los productos de La Divina Providencia, organizados para que encuentres rápido desayunos, entradas, parrilla, tradición, bebidas y licores.</p>
           <div class="action-row">
             <a class="btn btn-fire" href="#quick-menu">Empezar carta</a>
             <a class="btn btn-wa" data-whatsapp-link href="#">Reservar por WhatsApp</a>
           </div>
         </div>
         <figure class="visual-card hero-photo">
-          <img src="assets/hero-placeholder.svg" alt="Espacio para foto de carta y parrilla" />
+          <img src="assets/hero-placeholder.svg" alt="Espacio para foto de carta, parrilla y mirador" />
         </figure>
       </div>
     </section>
@@ -44,6 +45,16 @@
     <nav class="quick-menu" id="quick-menu" aria-label="Accesos rápidos del menú">
       <div class="container quick-menu-scroll" data-quick-menu></div>
     </nav>
+
+    <section class="menu-intro">
+      <div class="container menu-intro-card">
+        <div>
+          <span class="eyebrow">Carta visual completa</span>
+          <h2>Elige, mira y antoja.</h2>
+        </div>
+        <p>Cada producto conserva un espacio para foto. Cuando carguen las imágenes reales, solo deben reemplazar la ruta en <strong>data/menu-data.js</strong>.</p>
+      </div>
+    </section>
 
     <section class="menu-list" data-menu-list></section>
   </main>
@@ -54,7 +65,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.png" alt="La Divina Providencia Parrilla Mirador" />
-        <p>Menú digital con espacios listos para reemplazar cada placeholder por la foto real del producto.</p>
+        <p>Menú digital completo, con categorías claras, precios y espacios listos para fotografías.</p>
       </div>
       <div>
         <h3>Categorías</h3>

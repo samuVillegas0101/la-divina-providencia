@@ -1,18 +1,30 @@
-# La Divina Providencia - sitio estático
+# La Divina Providencia - sitio estático v2
 
-Este paquete contiene una landing home y una página de menú digital listas para publicar como sitio estático gratuito.
+Este paquete contiene una landing home y una página de menú digital listas para publicar en Cloudflare Pages y luego importar a Figma con html.to.design.
 
 ## Archivos principales
 
-- `index.html`: home landing.
-- `menu.html`: menú completo.
-- `styles.css`: estilos responsive.
-- `app.js`: renderiza categorías, productos, enlaces y acciones.
+- `index.html`: landing home.
+- `menu.html`: menú digital completo.
+- `styles.css`: estilos responsive desktop/mobile.
+- `app.js`: renderiza categorías, carruseles del home, productos, enlaces y acciones.
 - `data/menu-data.js`: datos editables del menú, precios, categorías, imágenes y enlaces.
 - `assets/logo.png`: logo final.
 - `assets/product-placeholder.svg`: placeholder de foto para productos.
-- `assets/hero-placeholder.svg`: placeholder de fondo / hero.
-- `assets/experience-placeholder.svg`: placeholder de experiencia / mirador.
+- `assets/hero-placeholder.svg`: placeholder de hero.
+- `assets/experience-placeholder.svg`: placeholder de experiencia/mirador.
+- `assets/products/`: carpeta donde deben ir las fotos reales de platos.
+
+## Qué incluye esta versión
+
+- Home simplificado tipo landing.
+- Acceso directo a WhatsApp.
+- Acceso directo a carta completa.
+- 4 categorías principales: Desayunos, Para compartir, Parrilla y tradición, Bebidas y licores.
+- Carruseles/cuadros visuales de productos en el home.
+- Página `menu.html` con todos los productos de la carta cargados desde el Excel.
+- Espacio de foto para cada producto.
+- Diseño responsive para mobile.
 
 ## Para cambiar WhatsApp
 
@@ -41,26 +53,22 @@ whatsappText: "Hola, quiero hacer una reserva en La Divina Providencia."
 image: "assets/products/empanadas.webp"
 ```
 
-Mientras el campo esté vacío, el sitio muestra el placeholder.
+Mientras el campo esté vacío, el sitio muestra `assets/product-placeholder.svg`.
 
-## Para publicar gratis en Cloudflare Pages
+## Para actualizar GitHub + Cloudflare
 
-1. Crea un repositorio en GitHub.
-2. Sube todos los archivos de esta carpeta.
-3. En Cloudflare Pages, crea un proyecto nuevo conectado a ese repositorio.
-4. En configuración de build deja:
-   - Framework preset: None
-   - Build command: vacío
-   - Output directory: `/` o vacío, según te lo pida Cloudflare.
-5. Publica.
+1. Reemplaza los archivos actuales del repositorio por los de este paquete.
+2. Haz commit y push a GitHub.
+3. Cloudflare Pages desplegará automáticamente el nuevo sitio.
+4. Luego importa en Figma con html.to.design:
+   - Home: `https://tu-proyecto.pages.dev/`
+   - Menú: `https://tu-proyecto.pages.dev/menu.html`
 
-El sitio quedará disponible en un dominio gratuito tipo:
+## Importar en Figma
 
-`https://nombre-del-proyecto.pages.dev`
+Para tener dos mesas de trabajo:
 
-## Notas
+1. Importa primero el home con viewport desktop, por ejemplo 1440 px.
+2. Importa luego `menu.html` con el mismo viewport.
+3. Repite con viewport 390 px si quieres también versión mobile.
 
-- No se incluyeron horarios porque el diseño final indicado no los debe mostrar.
-- La dirección y enlace de Google Maps ya están cargados.
-- Solo se incluyó Instagram como red social.
-- Los productos sin precio en el Excel quedaron como `Consultar`.
