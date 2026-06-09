@@ -226,3 +226,59 @@ a.product-card:hover{transform:translateY(-2px);border-color:rgba(201,168,103,.4
 .footer-brand p {
     margin-top: 20px;
 }
+/* MOBILE PRODUCT CARDS - foto arriba, lista vertical */
+@media (max-width: 980px) {
+  .menu-page .menu-list .product-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .menu-page .menu-list .product-card {
+    display: block !important;
+    grid-template-columns: none !important;
+    min-height: initial !important;
+  }
+
+  .menu-page .menu-list .product-media {
+    width: 100%;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(201, 168, 103, 0.22) !important;
+  }
+
+  .menu-page .menu-list .product-media img {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .menu-page .menu-list .product-body {
+    padding: 15px 16px 17px;
+  }
+}
+
+@media (max-width: 520px) {
+  .menu-page .menu-list .product-grid {
+    gap: 16px;
+  }
+
+  .menu-page .menu-list .product-media img {
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .menu-page .menu-list .product-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .menu-page .menu-list .price {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+}
