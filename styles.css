@@ -300,31 +300,13 @@ a.product-card:hover{transform:translateY(-2px);border-color:rgba(201,168,103,.4
   display:block !important;
   min-height:initial !important;
   overflow:visible;
-  padding:15px 16px 15px 54px;
+  padding:15px 16px;
   border:1px solid rgba(201,168,103,.20);
   border-radius:18px;
   background:linear-gradient(180deg,rgba(255,255,255,.040),rgba(255,255,255,.018));
   box-shadow:none;
 }
 
-#bebidas-licores .menu-group:not(#sodas):not(#cocteles) .product-card::before{
-  counter-increment:bebida-item;
-  content:counter(bebida-item, decimal-leading-zero);
-  position:absolute;
-  left:15px;
-  top:16px;
-  width:26px;
-  height:26px;
-  display:grid;
-  place-items:center;
-  border:1px solid rgba(201,168,103,.32);
-  border-radius:999px;
-  background:rgba(201,168,103,.075);
-  color:var(--gold);
-  font-size:10px;
-  font-weight:900;
-  letter-spacing:.04em;
-}
 
 #bebidas-licores .menu-group:not(#sodas):not(#cocteles) .product-media{
   display:none !important;
