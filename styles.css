@@ -397,4 +397,100 @@ a.product-card:hover{transform:translateY(-2px);border-color:rgba(201,168,103,.4
     font-size:12px;
   }
 }
+/* =====================================================
+   PRODUCTOS SIN FOTOGRAFÍA
+   ===================================================== */
 
+.product-card.product-card--no-image {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: auto;
+
+  display: block;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(17, 15, 12, 0.98) 0%,
+      rgba(10, 9, 8, 0.98) 100%
+    );
+
+  border: 1px solid rgba(201, 146, 67, 0.38);
+  border-radius: 18px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* Oculta completamente el espacio reservado para la foto */
+.product-card.product-card--no-image .product-media {
+  display: none;
+}
+
+/* Espaciado interior del producto */
+.product-card.product-card--no-image .product-body {
+  width: 100%;
+  padding: 14px 16px 13px;
+}
+
+/* Nombre a la izquierda y precio a la derecha */
+.product-card.product-card--no-image .product-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+}
+
+/* Nombre del producto */
+.product-card.product-card--no-image .product-top h3 {
+  margin: 0;
+  color: #fff4df;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+/* Precio */
+.product-card.product-card--no-image .price {
+  flex-shrink: 0;
+  color: #f4ac3e;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* Descripción */
+.product-card.product-card--no-image .product-body > p {
+  margin: 7px 0 0;
+  color: #cdbb9e;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  .product-card.product-card--no-image {
+    border-radius: 16px;
+  }
+
+  .product-card.product-card--no-image .product-body {
+    padding: 13px 15px;
+  }
+
+  .product-card.product-card--no-image .product-top {
+    gap: 12px;
+  }
+
+  .product-card.product-card--no-image .product-top h3 {
+    font-size: 0.96rem;
+  }
+
+  .product-card.product-card--no-image .price {
+    font-size: 0.9rem;
+  }
+
+  .product-card.product-card--no-image .product-body > p {
+    font-size: 0.84rem;
+  }
+}
