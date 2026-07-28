@@ -2022,5 +2022,73 @@
     </article></div>
   </main>
   <footer class="site-footer compact-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/logo.png" alt="La Divina Providencia Parrilla Mirador" /><p>El fuego que reúne, la tradición que se siente valiosa y la abundancia que se comparte.</p></div><div><h3>Categorías</h3><ul><li><a href="menu.html#desayunos">Desayunos</a></li><li><a href="menu.html#para-compartir">Para compartir</a></li><li><a href="menu.html#parrilla-tradicion">Parrilla y tradición</a></li><li><a href="menu.html#bebidas-licores">Bebidas y licores</a></li></ul></div><div><h3>Ubicación</h3><p><strong>Mirador La Providencia</strong><br>Antigua Vía al Mar #Kilómetro 9, Pajarito, San Cristóbal, San Pedro, Medellín, Antioquia</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Mirador+La+Providencia+Antigua+V%C3%ADa+al+Mar+Kil%C3%B3metro+9+Pajarito+San+Crist%C3%B3bal+San+Pedro+Medell%C3%ADn+Antioquia" target="_blank" rel="noopener">Cómo llegar</a></div><div><h3>Acciones</h3><a class="text-link" href="index.html">Volver al home</a><br><a class="text-link" href="https://wa.me/573022882611?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20La%20Divina%20Providencia." target="_blank" rel="noopener">Reservar por WhatsApp</a><br><a class="text-link" href="https://www.instagram.com/divinaprovidenciamirador/?hl=es" target="_blank" rel="noopener">Instagram</a></div></div></footer>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    document.querySelectorAll(".product-grid").forEach(grid => {
+
+        const cards = [...grid.querySelectorAll(".product-card")];
+
+        const withImage = [];
+        const withoutImage = [];
+
+        cards.forEach(card => {
+
+            const img = card.querySelector(".product-media img");
+
+            let hasImage = false;
+
+            if(img){
+
+                const src = (img.getAttribute("src") || "").trim();
+
+                // No existe src
+                if(src !== ""){
+
+                    // Si la imagen cargó correctamente
+                    if(img.complete && img.naturalWidth > 0){
+
+                        // Ignorar placeholder
+                        if(!src.includes("product-placeholder")){
+                            hasImage = true;
+                        }
+
+                    }else{
+
+                        // Esperar a que termine de cargar
+                        img.addEventListener("load", () => {
+                            if(img.naturalWidth > 0){
+                                location.reload();
+                            }
+                        });
+
+                    }
+
+                }
+
+            }
+
+            if(hasImage){
+
+                withImage.push(card);
+
+            }else{
+
+                card.classList.add("no-image");
+                withoutImage.push(card);
+
+            }
+
+        });
+
+        grid.innerHTML = "";
+
+        withImage.forEach(card => grid.appendChild(card));
+        withoutImage.forEach(card => grid.appendChild(card));
+
+    });
+
+});
+</script>        
 </body>
 </html>
